@@ -3,7 +3,6 @@ import 'package:flutter_travel_ui_starter/models/destination_model.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../models/destination_model.dart';
-import '../models/destination_model.dart';
 
 class DestinationCarousel extends StatelessWidget {
   @override
