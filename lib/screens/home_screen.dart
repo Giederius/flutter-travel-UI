@@ -92,6 +92,14 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentTab,
+        selectedFontSize: 0,
+        onTap: (int value) {
+          setState(
+            () {
+              _currentTab = value;
+            },
+          );
+        },
         items: [
           BottomNavigationBarItem(
             icon: Icon(
@@ -110,7 +118,8 @@ class _HomeScreenState extends State<HomeScreen> {
           BottomNavigationBarItem(
             icon: CircleAvatar(
               radius: 15,
-              // backgroundImage: ,
+              backgroundImage: NetworkImage(
+                  'https://thumbs.dreamstime.com/b/default-avatar-photo-placeholder-profile-icon-eps-file-easy-to-edit-default-avatar-photo-placeholder-profile-icon-124557887.jpg'),
             ),
             label: (''),
           ),
